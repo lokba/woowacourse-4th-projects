@@ -2,6 +2,27 @@ import styled from "styled-components";
 
 export const Box = styled.div`
   width: 20rem;
+
+  @media ${({ theme }) => theme.devices.laptop()} {
+    width: 19rem;
+  }
+
+  @media ${({ theme }) => theme.devices.tabletM(100)} {
+    width: 18rem;
+  }
+
+  @media ${({ theme }) => theme.devices.mobileL(30)} {
+    width: 17rem;
+  }
+
+  @media ${({ theme }) => theme.devices.mobileL(10)} {
+    width: 16.5rem;
+  }
+
+  @media ${({ theme }) => theme.devices.mobileL()} {
+    width: 15.5rem;
+  }
+
   height: fit-content;
   transition: transform 0.3s;
 

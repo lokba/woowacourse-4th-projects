@@ -2,7 +2,12 @@ import styled from "styled-components";
 
 export const Box = styled.div`
   display: flex;
+
   height: 100vh;
+
+  @media ${({ theme }) => theme.devices.tablet(70)} {
+    flex-direction: column;
+  }
 `;
 
 export const LeftBox = styled.div`
@@ -12,6 +17,12 @@ export const LeftBox = styled.div`
   justify-content: center;
   align-items: center;
   width: 40%;
+
+  @media ${({ theme }) => theme.devices.tablet(70)} {
+    width: 100%;
+    height: 40%;
+    border: 3px solid blue;
+  }
 `;
 
 export const Content = styled.div`
@@ -21,13 +32,29 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 9rem;
   font-family: "Nanum Pen Script", cursive;
+  font-size: 9rem;
+
+  @media ${({ theme }) => theme.devices.laptop(110)} {
+    font-size: 7rem;
+  }
+
+  @media ${({ theme }) => theme.devices.tablet(70)} {
+    font-size: 7rem;
+  }
 `;
 
 export const Description = styled.p`
   line-height: 1.2;
   font-size: 2.5rem;
+
+  @media ${({ theme }) => theme.devices.laptop(110)} {
+    font-size: 2.3rem;
+  }
+
+  @media ${({ theme }) => theme.devices.tablet(70)} {
+    font-size: 2rem;
+  }
 `;
 
 export const Background = styled.div`
@@ -47,20 +74,92 @@ export const ImageBox = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem 10rem;
+  height: 100%;
+  overflow-y: none;
 
   > img {
     width: 10rem;
     height: 10rem;
+  }
+
+  @media ${({ theme }) => theme.devices.laptop()} {
+    gap: 2rem 7rem;
+
+    > img {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+
+  @media ${({ theme }) => theme.devices.tablet(100)} {
+    gap: 2rem 7.5rem;
+
+    > img {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+
+  @media ${({ theme }) => theme.devices.tablet()} {
+    gap: 2rem 7.2rem;
+
+    > img {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+
+  @media ${({ theme }) => theme.devices.tabletM(60)} {
+    gap: 2rem 7rem;
+
+    > img {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+
+  @media ${({ theme }) => theme.devices.tabletM()} {
+    gap: 2rem 5.5rem;
+
+    > img {
+      width: 5.5rem;
+      height: 5.5rem;
+    }
+  }
+
+  @media ${({ theme }) => theme.devices.mobileL(80)} {
+    gap: 2rem 5rem;
+
+    > img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  @media ${({ theme }) => theme.devices.mobileL(30)} {
+    gap: 2rem 4.5rem;
+
+    > img {
+      width: 5rem;
+      height: 5rem;
+    }
   }
 `;
 
 export const RightBox = styled.div`
   width: 60%;
   padding: 3rem;
+
+  @media ${({ theme }) => theme.devices.tablet(70)} {
+    width: 100%;
+    height: 60%;
+    padding-bottom: 0;
+    border: 3px solid red;
+  }
 `;
 
 export const Input = styled.input`
-  width: 50rem;
+  width: 40rem;
   padding: 1rem;
   margin-left: 3rem;
 
@@ -74,5 +173,9 @@ export const ProjectList = styled.div`
   gap: 6rem;
   height: calc(100% - 50px);
   overflow-y: scroll;
-  padding: 2rem 3rem 3rem;
+  padding: 2rem 2rem 3rem 3rem;
+
+  @media ${({ theme }) => theme.devices.tablet(70)} {
+    border: 1px solid red;
+  }
 `;
