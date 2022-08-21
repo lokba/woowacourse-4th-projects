@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/static/js/main.e71124e7.js",
-    "index.html": "/index.html",
-    "main.e71124e7.js.map": "/static/js/main.e71124e7.js.map"
+    "main.js": "/woowacourse-4th-projects/static/js/main.bdddd0d7.js",
+    "index.html": "/woowacourse-4th-projects/index.html",
+    "main.bdddd0d7.js.map": "/woowacourse-4th-projects/static/js/main.bdddd0d7.js.map"
   },
   "entrypoints": [
-    "static/js/main.e71124e7.js"
+    "static/js/main.bdddd0d7.js"
   ]
 }
