@@ -32,7 +32,8 @@ const HomePage = () => {
             프로젝트 모음집
           </S.Title>
           <S.Description>
-            스프린트 3도 고생하셨습니다. <br />
+            Level 3도 고생하셨습니다~
+            <br />
             여러분들의 값진 결과물입니다.
           </S.Description>
         </S.Content>

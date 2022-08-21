@@ -166,6 +166,12 @@ export const Input = styled.input`
 
   @media ${({ theme }) => theme.devices.mobileM()} {
     width: 35rem;
+    font-size: 1.2rem;
+  }
+
+  @media ${({ theme }) => theme.devices.mobileS()} {
+    width: 30rem;
+    font-size: 1rem;
   }
 `;
 
