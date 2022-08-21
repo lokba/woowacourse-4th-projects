@@ -16,11 +16,15 @@ export const Box = styled.div`
   }
 
   @media ${({ theme }) => theme.devices.mobileL(10)} {
-    width: 16.5rem;
+    width: 17rem;
   }
 
   @media ${({ theme }) => theme.devices.mobileL()} {
-    width: 15.5rem;
+    width: 16.5rem;
+  }
+
+  @media ${({ theme }) => theme.devices.mobileS(20)} {
+    width: 100%;
   }
 
   height: fit-content;
@@ -46,8 +50,12 @@ export const Image = styled.div<HeaderProps>`
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
   background-position: center center;
   background-repeat: repeat-x;
-  background-size: 50px;
+  background-size: 5rem;
   border-radius: 10px;
+
+  @media ${({ theme }) => theme.devices.tabletM(100)} {
+    background-size: 4.5rem;
+  }
 `;
 
 export const ContentBox = styled.div`

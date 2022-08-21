@@ -21,7 +21,6 @@ export const LeftBox = styled.div`
   @media ${({ theme }) => theme.devices.tablet(70)} {
     width: 100%;
     height: 40%;
-    border: 3px solid blue;
   }
 `;
 
@@ -82,7 +81,7 @@ export const ImageBox = styled.div`
     height: 10rem;
   }
 
-  @media ${({ theme }) => theme.devices.laptop()} {
+  @media ${({ theme }) => theme.devices.laptopL()} {
     gap: 2rem 7rem;
 
     > img {
@@ -154,7 +153,6 @@ export const RightBox = styled.div`
     width: 100%;
     height: 60%;
     padding-bottom: 0;
-    border: 3px solid red;
   }
 `;
 
@@ -165,6 +163,10 @@ export const Input = styled.input`
 
   border: none;
   border-radius: 10px;
+
+  @media ${({ theme }) => theme.devices.mobileM()} {
+    width: 35rem;
+  }
 `;
 
 export const ProjectList = styled.div`
@@ -175,7 +177,7 @@ export const ProjectList = styled.div`
   overflow-y: scroll;
   padding: 2rem 2rem 3rem 3rem;
 
-  @media ${({ theme }) => theme.devices.tablet(70)} {
-    border: 1px solid red;
+  @media ${({ theme }) => theme.devices.mobileL(30)} {
+    gap: 3rem;
   }
 `;
