@@ -16,6 +16,7 @@ const GlobalStyle = styled.createGlobalStyle`
   body {
     width: 100%;
     height: 100%;
+    font-family: "Single Day", cursive;
     background-color: ${({ theme }) => theme.colors.gray_100};
   }
 
