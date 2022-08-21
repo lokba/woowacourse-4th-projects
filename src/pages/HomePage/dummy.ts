@@ -82,7 +82,7 @@ export const PROJECT_LIST: ProjectType[] = [
     name: "모락",
     description: "😄 모락: 모임을 즐겁게, 편하게!",
     imageUrl: "/assets/morak.png",
-    pageUrl: "",
+    pageUrl: "https://mo-rak.com",
     members: ["엘리", "차리", "에덴", "배카라", "앨버", "위니"],
   },
   {
