@@ -4,13 +4,18 @@ import GlobalStyle from "styles/GlobalStyle";
 import theme from "styles/theme";
 
 import HomePage from "pages/HomePage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <HomePage />
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Routes>
+          <Route path="*" element={<HomePage />} />
+        </Routes>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 };
 
