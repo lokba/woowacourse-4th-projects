@@ -15,5 +15,6 @@
     "resolveJsonModule": false,
     "moduleResolution": "node"
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["types/styled-components.d.ts"]
 }
