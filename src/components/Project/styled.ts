@@ -20,7 +20,7 @@ export const Box = styled.div`
   }
 
   @media ${({ theme }) => theme.devices.mobileL()} {
-    width: 16.5rem;
+    width: 14rem;
   }
 
   @media ${({ theme }) => theme.devices.mobileS(20)} {
@@ -72,6 +72,10 @@ export const Header = styled.div`
 export const Title = styled.h2`
   font-size: 2.5rem;
   font-weight: 700;
+
+  @media ${({ theme }) => theme.devices.mobileL()} {
+    font-size: 2rem;
+  }
 `;
 
 export const Link = styled.a`
@@ -85,6 +89,10 @@ export const Link = styled.a`
   font-size: 1.4rem;
   font-weight: bold;
   color: ${({ theme }) => theme.colors.white_100};
+
+  @media ${({ theme }) => theme.devices.mobileL()} {
+    font-size: 1rem;
+  }
 `;
 
 export const Description = styled.p`

@@ -136,11 +136,20 @@ export const ImageBox = styled.div`
   }
 
   @media ${({ theme }) => theme.devices.mobileL(30)} {
-    gap: 2rem 4.5rem;
+    gap: 2rem 4rem;
 
     > img {
       width: 5rem;
       height: 5rem;
+    }
+  }
+
+  @media ${({ theme }) => theme.devices.mobileM()} {
+    gap: 2rem 3.5rem;
+
+    > img {
+      width: 4rem;
+      height: 4rem;
     }
   }
 `;
@@ -164,8 +173,8 @@ export const Input = styled.input`
   border: none;
   border-radius: 10px;
 
-  @media ${({ theme }) => theme.devices.mobileM()} {
-    width: 35rem;
+  @media ${({ theme }) => theme.devices.mobileL()} {
+    width: 30rem;
     font-size: 1.2rem;
   }
 
@@ -185,5 +194,9 @@ export const ProjectList = styled.div`
 
   @media ${({ theme }) => theme.devices.mobileL(30)} {
     gap: 3rem;
+  }
+
+  @media ${({ theme }) => theme.devices.mobileM()} {
+    gap: 3rem 2rem;
   }
 `;
