@@ -8,7 +8,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <BrowserRouter basename="/woowacourse-4th-projects/">
+    <BrowserRouter>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Routes>
