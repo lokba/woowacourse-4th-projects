@@ -169,6 +169,7 @@ export const Input = styled.input`
   width: 40rem;
   padding: 1rem;
   margin-left: 3rem;
+  margin-bottom: 2rem;
 
   border: none;
   border-radius: 10px;
@@ -179,7 +180,7 @@ export const Input = styled.input`
   }
 
   @media ${({ theme }) => theme.devices.mobileS()} {
-    width: 30rem;
+    width: 25rem;
     font-size: 1rem;
   }
 `;
@@ -190,7 +191,7 @@ export const ProjectList = styled.div`
   gap: 6rem;
   height: calc(100% - 50px);
   overflow-y: scroll;
-  padding: 2rem 2rem 3rem 3rem;
+  padding: 0 2rem 3rem 3rem;
 
   @media ${({ theme }) => theme.devices.mobileL(30)} {
     gap: 3rem;
