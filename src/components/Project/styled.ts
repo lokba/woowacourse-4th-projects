@@ -23,7 +23,7 @@ export const Box = styled.div`
     width: 14rem;
   }
 
-  @media ${({ theme }) => theme.devices.mobileS(20)} {
+  @media ${({ theme }) => theme.devices.mobileM()} {
     width: 100%;
   }
 
@@ -76,6 +76,10 @@ export const Title = styled.h2`
   @media ${({ theme }) => theme.devices.mobileL()} {
     font-size: 2rem;
   }
+
+  @media ${({ theme }) => theme.devices.mobileM()} {
+    font-size: 2.5rem;
+  }
 `;
 
 export const Link = styled.a`
@@ -92,6 +96,10 @@ export const Link = styled.a`
 
   @media ${({ theme }) => theme.devices.mobileL()} {
     font-size: 1rem;
+  }
+
+  @media ${({ theme }) => theme.devices.mobileM()} {
+    font-size: 1.7rem;
   }
 `;
 

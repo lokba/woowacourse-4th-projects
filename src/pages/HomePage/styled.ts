@@ -202,6 +202,10 @@ export const ProjectList = styled.div`
   overflow-y: scroll;
   padding: 0 2rem 3rem 3rem;
 
+  @media ${({ theme }) => theme.devices.tabletM()} {
+    gap: 4rem;
+  }
+
   @media ${({ theme }) => theme.devices.mobileL(30)} {
     gap: 3rem;
   }
