@@ -85,8 +85,17 @@ export const ImageBox = styled.div`
     gap: 2rem 7rem;
 
     > img {
-      width: 8rem;
-      height: 8rem;
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+
+  @media ${({ theme }) => theme.devices.laptop()} {
+    gap: 2rem 7rem;
+
+    > img {
+      width: 9rem;
+      height: 9rem;
     }
   }
 
