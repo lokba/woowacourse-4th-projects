@@ -89,7 +89,7 @@ export const ImageBox = styled.div`
     }
   }
 
-  @media ${({ theme }) => theme.devices.laptop()} {
+  @media ${({ theme }) => theme.devices.laptop(100)} {
     gap: 2rem 7rem;
 
     > img {
@@ -98,7 +98,7 @@ export const ImageBox = styled.div`
     }
   }
 
-  @media ${({ theme }) => theme.devices.tablet(100)} {
+  @media ${({ theme }) => theme.devices.tablet(200)} {
     gap: 2rem 7.5rem;
 
     > img {
