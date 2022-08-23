@@ -2,6 +2,17 @@ import styled from "styled-components";
 
 export const Box = styled.div`
   width: 20rem;
+  height: fit-content;
+  transition: transform 0.3s;
+
+  border-radius: 10px;
+  background-color: ${({ theme }) => theme.colors.white_100};
+  box-shadow: ${({ theme }) => theme.shadows.basic};
+  z-index: 100;
+
+  :hover {
+    transform: scale(1.07);
+  }
 
   @media ${({ theme }) => theme.devices.laptop()} {
     width: 19rem;
@@ -15,28 +26,12 @@ export const Box = styled.div`
     width: 17rem;
   }
 
-  @media ${({ theme }) => theme.devices.mobileL(10)} {
-    width: 17rem;
-  }
-
   @media ${({ theme }) => theme.devices.mobileL()} {
     width: 14rem;
   }
 
   @media ${({ theme }) => theme.devices.mobileM()} {
     width: 100%;
-  }
-
-  height: fit-content;
-  transition: transform 0.3s;
-
-  border-radius: 10px;
-  background-color: ${({ theme }) => theme.colors.white_100};
-  box-shadow: ${({ theme }) => theme.shadows.basic};
-  z-index: 100;
-
-  :hover {
-    transform: scale(1.07);
   }
 `;
 
@@ -106,8 +101,8 @@ export const Link = styled.a`
 export const Description = styled.p`
   margin-bottom: 1.5rem;
 
-  font-size: 1.5rem;
   line-height: 1.4;
+  font-size: 1.5rem;
 `;
 
 export const MemberContainer = styled.div`

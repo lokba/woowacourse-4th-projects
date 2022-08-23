@@ -1,21 +1,22 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import { ThemeProvider } from "styled-components";
 
 import GlobalStyle from "styles/GlobalStyle";
 import theme from "styles/theme";
 
 import HomePage from "pages/HomePage";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <BrowserRouter>
         <Routes>
           <Route path="*" element={<HomePage />} />
         </Routes>
-      </ThemeProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 };
 

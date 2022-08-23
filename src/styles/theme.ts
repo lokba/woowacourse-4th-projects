@@ -1,9 +1,9 @@
 const theme = {
   colors: {
     white_100: "#ffffff",
+    gray_100: "#e9ecef",
     pink_50: "#ffdeeb",
     pink_100: "#ff385c",
-    gray_100: "#e9ecef",
   },
   shadows: {
     basic: "#64646f33 0px 7px 29px 0px",

@@ -40,7 +40,7 @@ const HomePage = () => {
         <S.Background>
           <S.ImageBox>
             {projectList.map(({ imageUrl, name }) => (
-              <img key={name} src={imageUrl} alt="로고" />
+              <img key={name} src={imageUrl} alt="프로젝트 대표 아이콘" />
             ))}
           </S.ImageBox>
         </S.Background>
