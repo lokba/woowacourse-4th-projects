@@ -102,7 +102,7 @@ export const PROJECT_LIST: ProjectType[] = [
   },
   {
     name: "체크메이트",
-    description: "출석",
+    description: "주제만 정해주세요. 출첵은 제가할게요!",
     imageUrl: "/assets/checkmate.png",
     pageUrl: "https://checkmate.today",
     members: ["쿤", "필즈", "썬", "아스피", "포키", "밧드", "우디"],
