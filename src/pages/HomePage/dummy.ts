@@ -76,7 +76,7 @@ export const PROJECT_LIST: ProjectType[] = [
     description: "당신의 마음을 전달하세요, 땡쿠 💌",
     imageUrl: "/assets/thankoo.png",
     pageUrl: "https://thankoo.co.kr",
-    members: ["스컬", "리라", "호호", "후니", "비녀", "후이"],
+    members: ["스컬", "라라", "호호", "후니", "비녀", "후이"],
   },
   {
     name: "모락",
