@@ -129,7 +129,7 @@ export const PROJECT_LIST: ProjectType[] = [
     members: ["칙촉", "클레이", "오찌", "티키", "코린", "블링", "민초"],
   },
   {
-    name: "MAT_ZIP",
+    name: "MAT.ZIP",
     description: "우테코 크루들을 위한 맛집 탐방 도우미",
     imageUrl: "/assets/image/matzip.png",
     pageUrl: "https://matzip.today",
