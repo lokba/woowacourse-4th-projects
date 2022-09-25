@@ -30,7 +30,7 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-family: "Nanum Pen Script", cursive;
+  font-family: "SubsetNanumPen", cursive;
   font-size: 9rem;
 
   @media ${({ theme }) => theme.devices.laptop(110)} {
